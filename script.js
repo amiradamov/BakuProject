@@ -1,7 +1,7 @@
 
 $( document ).ready(function() {
 $('#books').waypoint(function() {
-    increment('books', 1000000);
+    increment('books', 3000);
   }, {offset: '75%'});
   
   $('#sentences').waypoint(function() {
@@ -24,12 +24,12 @@ $('#books').waypoint(function() {
     // alert('in the function');
     var currVal = parseInt(document.getElementById(elem).innerHTML, 10);
     if (currVal < finalVal) {
-      finalVal > 100000 ? currVal = currVal + 50000 : currVal++;
+      finalVal > 1000000 ? currVal = currVal + 50000 : currVal = currVal + 5;
     document.getElementById(elem).innerHTML = currVal;
   
       setTimeout(function() {
         increment(elem, finalVal);
-      }, 20)
+      }, 5)
     }
   };
 });
