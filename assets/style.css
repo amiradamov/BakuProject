@@ -54,6 +54,10 @@ body {
     font-size: 0.1rem;
 }
 
+.fa-check {
+    color: var(--yellow-color);
+}
+
 #banner {
     height: 300px;
     background-color: var(--purple-color);
@@ -99,8 +103,16 @@ body {
 }
 
 textarea {
-    height: 300px;
+    background-color: transparent  !important;
+    outline: none  !important;
+    color: var(--whitish-color) !important;
 }
+
+select {
+    background-color: transparent  !important;
+    color: var(--whitish-color) !important;
+}
+
 
 button {
     color: var(--whitish-color) !important;
@@ -111,6 +123,12 @@ button {
 button:hover {
     background-color: var(--purple-color) !important;
     border: 1px solid var(--purple-color) !important;
+}
+
+.subtitle {
+    font-family: GilroyMedium;
+    color: var(--yellow-color);
+    font-size: 1.5rem;
 }
 
 @media screen and (max-width: 480px) {

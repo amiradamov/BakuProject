@@ -121,7 +121,7 @@
         <span class="names mb-4">Amir Adamov</span><br>
         <span class="faculties">BSCS'21</span>
       </div>
-      
+
     </div>
   </div>
 
@@ -190,40 +190,44 @@
   <div class="container mt-3 mb-3">
     <span class="title">text classifier</span>
     <div class="row">
+
       <div class="col-12 col-md-6">
+        <form action="">
+          <div class="form-group mt-3">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"
+              placeholder="type your text here..."></textarea>
+          </div>
+        </form>
+
         <div class="input-group mt-3">
           <select class="custom-select" id="inputGroupSelect04">
             <option selected>choose an algorithm</option>
-            <option value="1">naive bayes</option>
-            <option value="2">neural networks</option>
-            <option value="3">random forest</option>
-            <option value="3">support vector machine (SVM)</option>
+            <option class="algorithms" value="1">naive bayes</option>
+            <option class="algorithms" value="2">neural networks</option>
+            <option class="algorithms" value="3">random forest</option>
+            <option class="algorithms" value="3">support vector machine (SVM)</option>
           </select>
-          <div class="input-group-append">
+          <div class="input-group-append mb-4">
             <button class="btn btn-outline-secondary" type="button">submit</button>
           </div>
         </div>
+
       </div>
 
-      <div class="col-12 col-md-6 ">
-        <!-- <span><i class="fa fa-check" aria-hidden="true"></i></span>
-        <span><i class="fa fa-check" aria-hidden="true"></i></span>
-        <span><i class="fa fa-check" aria-hidden="true"></i></span>
-        <span><i class="fa fa-check" aria-hidden="true"></i></span>
-        <span><i class="fa fa-check" aria-hidden="true"></i></span> -->
+      <div class="col-12 col-md-5 offset-1 d-flex flex-column text-center text-md-left">
+        <span class="subtitle mb-4">text classifier application areas</span>
+        <span class="mb-3"><i class="fa fa-check mr-3" aria-hidden="true"></i>Support ticket organization</span>
+        <span class="mb-3"><i class="fa fa-check mr-3" aria-hidden="true"></i>Content aggregation and clustering</span>
+        <span class="mb-3"><i class="fa fa-check mr-3" aria-hidden="true"></i>Fraud and spam detection</span>
+        <span class="mb-3"><i class="fa fa-check mr-3" aria-hidden="true"></i>Language detection</span>
+        <span class="mb-3"><i class="fa fa-check mr-3" aria-hidden="true"></i>Text analysing</span>
+        <span class="mb-3"><i class="fa fa-check mr-3" aria-hidden="true"></i>Lead generation</span>
+        <span class="mb-3"><i class="fa fa-check mr-3" aria-hidden="true"></i>Recruitment
+        </span>
       </div>
+
     </div>
-
-      <div class="row">
-        <div class="col-12 col-md-6">
-        <form action="">
-          <div class="form-group mt-3">
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="20" placeholder="type your text here..."></textarea>
-          </div>
-        </form>
-      </div>
-    </div>
-
+  </div>
   </div>
 </body>
 
