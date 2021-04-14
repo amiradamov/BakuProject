@@ -24,7 +24,7 @@ $('#books').waypoint(function() {
     // alert('in the function');
     var currVal = parseInt(document.getElementById(elem).innerHTML, 10);
     if (currVal < finalVal) {
-      finalVal > 1000000 ? currVal = currVal + 50000 : currVal = currVal + 5;
+      finalVal > 1000000 ? currVal = currVal + 10000 : currVal = currVal + 1;
     document.getElementById(elem).innerHTML = currVal;
   
       setTimeout(function() {
@@ -33,3 +33,7 @@ $('#books').waypoint(function() {
     }
   };
 });
+
+// $( document ).ready(function() {
+//   $('select').selectpicker();
+// });
