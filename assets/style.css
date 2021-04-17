@@ -59,8 +59,15 @@ body {
 }
 
 #banner {
-    height: 300px;
+    height: 200px;
     background-color: var(--purple-color);
+}
+.banner-image {
+    width: 23rem;
+    position: absolute;
+    /* top: 50%; */
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .about-us {
@@ -81,6 +88,10 @@ body {
     width: 25rem;
 }
 
+#project-idea-img {
+    width: 15rem;
+}
+
 .us-img {
     width: 8rem;
 }
@@ -99,7 +110,7 @@ body {
 }
 
 .names {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 textarea {
@@ -134,6 +145,10 @@ button:hover {
 @media screen and (max-width: 480px) {
     .statistics {
         font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
     }
   }
 
