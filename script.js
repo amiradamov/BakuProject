@@ -34,6 +34,6 @@ $('#books').waypoint(function() {
   };
 });
 
-// $( document ).ready(function() {
-//   $('select').selectpicker();
-// });
+$( document ).ready(function() {
+  $('.dropdown-toggle').dropdown()
+});
