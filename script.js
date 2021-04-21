@@ -36,30 +36,44 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 
+  const textClassifier = document.getElementById("text-classifier");
+  const lemmatizer = document.getElementById("lemmatizer");
+  const algorithms = document.getElementById('algorithms');
+
+  // textClassifier.addEventListener("mouseover", mouseEvent1);
+  // textClassifier.addEventListener("mouseout", mouseEvent2);
+  // lemmatizer.addEventListener("mouseover", mouseEvent3);
+  // lemmatizer.addEventListener("mouseout", mouseEvent4);
+
+  // function mouseEvent1(){
+  //   textClassifier.style.backgroundColor = '#726EFF';
+  // }
+
+  // function mouseEvent2() {
+  //   textClassifier.style.backgroundColor = 'transparent';
+  // }
+
+  // function mouseEvent3() {
+  //   lemmatizer.style.backgroundColor = '#726EFF';
+  // }
+
+  // function mouseEvent4() {
+  //   lemmatizer.style.backgroundColor = 'transparent';
+  // }
+
   $("#text-classifier").on("click", changeColor1);
   $("#lemmatizer").on("click", changeColor2);
 
   function changeColor1() {
-      document.getElementById('text-classifier').style.backgroundColor = '#726EFF';
-      document.getElementById('lemmatizer').style.backgroundColor = 'transparent';
-      document.getElementById('dropdown').display = "block";
-      // console.log(document.getElementById('dropdown').display);
+    textClassifier.style.backgroundColor = '#726EFF';
+    lemmatizer.style.backgroundColor = 'transparent';
+    algorithms.classList.remove("d-none");
   }
 
   function changeColor2() {
-      document.getElementById('lemmatizer').style.backgroundColor = '#726EFF';
-      document.getElementById('text-classifier').style.backgroundColor = 'transparent';
-      document.getElementById('dropdown').display = "none";
+    lemmatizer.style.backgroundColor = '#726EFF';
+    textClassifier.style.backgroundColor = 'transparent';
+    algorithms.classList.add("d-none");
   }
 
-
-  // if(document.getElementById('text-classifier').style.backgroundColor = '#726EFF') {
-  //   document.querySelector('dropdown').display = "block";
-  // }
-  // else {
-  //   document.querySelector('dropdown').display = "none";
-  // }
 })
-
-
-

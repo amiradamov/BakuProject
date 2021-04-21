@@ -175,45 +175,62 @@
           <button class="btn btn-secondary btn-lemmatizer mb-3" id="lemmatizer" type="button">
             lemmatizer
           </button>
-          <div class="dropdown" id="dropdown">
-            I'm here!
-          </div>
-          <!-- <div class="dropdown" id="dropdown">
-            <button class="btn btn-secondary dropdown-toggle algorithm-btn" type="button" id="dropdownMenuButton"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              algorithm
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <span class="dropdown-item">naive bayes</span>
-              <a class="dropdown-item" href="#">neural networks</a>
-              <a class="dropdown-item" href="#">random forest</a>
-              <a class="dropdown-item" href="#">support vector machine (SVM)</a>
+
+          <div class="d-none" id="algorithms">
+
+            <div class="form-check mb-2">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+                checked>
+              <label class="form-check-label" for="exampleRadios1">
+                naive bayes
+              </label>
             </div>
-          </div> -->
+
+            <div class="form-check mb-2">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <label class="form-check-label" for="exampleRadios2">
+                neural networks
+              </label>
+            </div>
+            
+            <div class="form-check mb-2">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <label class="form-check-label" for="exampleRadios2">
+                random forest
+              </label>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <label class="form-check-label" for="exampleRadios2">
+                support vector machine
+              </label>
+            </div>
         </div>
       </div>
+    </div>
 
-      <div class="col-12 col-md-5">
-        <form action="">
-          <div class="form-group mt-3">
-            <span class="subtitle">input</span>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"
-              placeholder="type your text here..."></textarea>
-          </div>
-        </form>
-      </div>
+    <div class="col-12 col-md-5">
+      <form action="">
+        <div class="form-group mt-3">
+          <span class="subtitle">input</span>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"
+            placeholder="type your text here..."></textarea>
+        </div>
+      </form>
+    </div>
 
-      <div class="col-12 col-md-5">
-        <form action="">
-          <div class="form-group mt-3">
-            <span class="subtitle">output</span>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"
-              placeholder="the result will appear here..."></textarea>
-          </div>
-        </form>
-      </div>
+    <div class="col-12 col-md-5">
+      <form action="">
+        <div class="form-group mt-3">
+          <span class="subtitle">output</span>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"
+            placeholder="the result will appear here..."></textarea>
+        </div>
+      </form>
+    </div>
 
-      <!-- <div class="col-12 col-md-5 offset-0 offset-md-1 d-flex flex-column text-center text-md-left">
+    <!-- <div class="col-12 col-md-5 offset-0 offset-md-1 d-flex flex-column text-center text-md-left">
         <span class="subtitle mb-4">text classifier application areas</span>
         <span class="mb-3"><i class="fa fa-check mr-3" aria-hidden="true"></i>Support ticket organization</span>
         <span class="mb-3"><i class="fa fa-check mr-3" aria-hidden="true"></i>Content aggregation and clustering</span>
@@ -224,15 +241,15 @@
         <span class="mb-3"><i class="fa fa-check mr-3" aria-hidden="true"></i>Recruitment
         </span>
       </div> -->
-    </div>
+  </div>
 
-    <!-- <div class="row">
-      <div class="col-12 col-md-4">
-        <button class="btn btn-secondary d-flex" type="button">
+  <div class="row">
+      <div class="col-12 d-flex justify-content-end">
+        <button class="btn btn-secondary btn-test" type="button">
           see the result
         </button>
       </div>
-    </div> -->
+    </div>
 
   </div>
   </div>
