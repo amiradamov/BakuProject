@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="./assets/style.css">
   <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/style.css">
   <link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.min.css">
   <link rel="shortcut icon" href="./assets/images/icon.png">
 
@@ -28,17 +28,17 @@
   <div class="container mt-3">
     <div class="row">
       <div class="col-2">
-        <img id="logo" src="./assets/images/logo.png" alt="">
+        <a href="#"><img id="logo" src="./assets/images/logo.png" alt=""></a>
       </div>
 
       <div class="col-10 d-none d-md-block mt-3">
         <ul class="nav justify-content-end">
           <li class="nav-item">
-            <a class="nav-link" href="#about-us">project</a>
+            <a class="nav-link" href="#project">project</a>
           </li>
 
           <li class="nav-item ml-3">
-            <a class="nav-link" href="#text-classifier">analysis tools</a>
+            <a class="nav-link" href="#analysis-tools">analysis tools</a>
           </li>
 
           <li class="nav-item ml-3">
@@ -55,7 +55,7 @@
         </ul>
       </div>
 
-      <div class="col-10 d-block d-md-none mt-3">
+      <div class="col-10 d-block d-md-none mt-3 language">
         <ul class="nav justify-content-end">
 
           <li class="nav-item ml-3">
@@ -76,7 +76,7 @@
       <div class="row d-flex">
         <div class="col-8 align-self-center">
           <span class="banner-title">development of text categorization <br> for Azerbaijani books</span><br>
-          <button class="btn btn-secondary mt-3" type="button">test now</button>
+          <a class="btn btn-secondary mt-3 btn-test" href="#analysis-tools" type="button">test now</a>
         </div>
         <div class="col-3 title justify-content-end d-none d-md-block">
           <img src="./assets/images/banner.png" class="banner-image" alt="">
@@ -86,7 +86,7 @@
   </div>
 
   <!-- Project Idea -->
-  <div class="container mt-5">
+  <div class="container mt-5" id="project">
     <span class="title">project</span>
     <div class="row">
       <div class="col-12 col-lg-6 about-us mt-3">
@@ -163,47 +163,50 @@
   </div>
 
   <!-- Analysis Tools -->
-  <div class="container mt-3 mb-3">
+  <div class="container mt-3 mb-3" id="analysis-tools">
     <span class="title">analysis tools</span>
     <div class="row">
 
-      <div class="col-12 col-md-6">
-        <div class="input-group mt-3 d-flex justify-content-between">
-
-          <button class="btn btn-secondary btn-text-classifier" type="button">
+      <div class="col-12 col-md-2">
+        <div class="input-group mt-3 d-flex flex-column">
+          <button class="btn btn-secondary btn-text-classifier mb-3 mt-2" id="text-classifier" type="button">
             text classifier
           </button>
-          <button class="btn btn-secondary btn-lemmatizer" type="button">
+          <button class="btn btn-secondary btn-lemmatizer mb-3" id="lemmatizer" type="button">
             lemmatizer
           </button>
-
+          <div class="dropdown" id="dropdown">
+            I'm here!
+          </div>
+          <!-- <div class="dropdown" id="dropdown">
+            <button class="btn btn-secondary dropdown-toggle algorithm-btn" type="button" id="dropdownMenuButton"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              algorithm
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <span class="dropdown-item">naive bayes</span>
+              <a class="dropdown-item" href="#">neural networks</a>
+              <a class="dropdown-item" href="#">random forest</a>
+              <a class="dropdown-item" href="#">support vector machine (SVM)</a>
+            </div>
+          </div> -->
         </div>
+      </div>
 
+      <div class="col-12 col-md-5">
         <form action="">
           <div class="form-group mt-3">
+            <span class="subtitle">input</span>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"
               placeholder="type your text here..."></textarea>
           </div>
         </form>
-
       </div>
 
-      <div class="col-12 col-md-6 mt-3">
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle algorithm-btn" type="button" id="dropdownMenuButton"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            choose an algorithm
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">naive bayes</a>
-            <a class="dropdown-item" href="#">neural networks</a>
-            <a class="dropdown-item" href="#">random forest</a>
-            <a class="dropdown-item" href="#">support vector machine (SVM)</a>
-          </div>
-        </div>
-
+      <div class="col-12 col-md-5">
         <form action="">
           <div class="form-group mt-3">
+            <span class="subtitle">output</span>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"
               placeholder="the result will appear here..."></textarea>
           </div>
@@ -221,16 +224,16 @@
         <span class="mb-3"><i class="fa fa-check mr-3" aria-hidden="true"></i>Recruitment
         </span>
       </div> -->
-
     </div>
 
-    <div class="row">
-      <div class="col-12 col-md-6">
+    <!-- <div class="row">
+      <div class="col-12 col-md-4">
         <button class="btn btn-secondary d-flex" type="button">
           see the result
         </button>
       </div>
-    </div>
+    </div> -->
+
   </div>
   </div>
 
@@ -250,10 +253,11 @@
     </div>
 
     <div class="row justify-content-between">
+
       <div class="col-6 col-md-3 justify-content-center mb-3 text-center">
-        <img class="us-img mb-2" src="./assets/images/ismayil.png" alt=""><br>
-        <span class="names mb-2">Ismayil Karimli</span><br>
-        <span class="faculties">student | BSIT'21</span>
+        <img class="us-img mb-2" src="./assets/images/amir.png" alt=""><br>
+        <span class="names mb-2">Amir Adamov</span><br>
+        <span class="faculties">student | BSCS'21</span>
       </div>
 
       <div class="col-6 col-md-3 justify-content-center mb-3 text-center">
@@ -263,16 +267,18 @@
       </div>
 
       <div class="col-6 col-md-3 justify-content-center mb-3 text-center">
+        <img class="us-img mb-2" src="./assets/images/ismayil.png" alt=""><br>
+        <span class="names mb-2">Ismayil Karimli</span><br>
+        <span class="faculties">student | BSIT'21</span>
+      </div>
+
+      <div class="col-6 col-md-3 justify-content-center mb-3 text-center">
         <img class="us-img mb-2" src="./assets/images/narmina.png" alt=""><br>
         <span class="names mb-2">Narmina Aghayeva</span><br>
         <span class="faculties">student | BSIT'22</span>
       </div>
 
-      <div class="col-6 col-md-3 justify-content-center mb-3 text-center">
-        <img class="us-img mb-2" src="./assets/images/amir.png" alt=""><br>
-        <span class="names mb-2">Amir Adamov</span><br>
-        <span class="faculties">student | BSCS'21</span>
-      </div>
+
     </div>
   </div>
 

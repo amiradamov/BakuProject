@@ -35,7 +35,31 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  $('.btn-text-classifier').click(function(){
-    this.style.backgroundColor = this.style.backgroundColor == 'transparent' ? 'red' : 'transparent';
-});
-});
+
+  $("#text-classifier").on("click", changeColor1);
+  $("#lemmatizer").on("click", changeColor2);
+
+  function changeColor1() {
+      document.getElementById('text-classifier').style.backgroundColor = '#726EFF';
+      document.getElementById('lemmatizer').style.backgroundColor = 'transparent';
+      document.getElementById('dropdown').display = "block";
+      // console.log(document.getElementById('dropdown').display);
+  }
+
+  function changeColor2() {
+      document.getElementById('lemmatizer').style.backgroundColor = '#726EFF';
+      document.getElementById('text-classifier').style.backgroundColor = 'transparent';
+      document.getElementById('dropdown').display = "none";
+  }
+
+
+  // if(document.getElementById('text-classifier').style.backgroundColor = '#726EFF') {
+  //   document.querySelector('dropdown').display = "block";
+  // }
+  // else {
+  //   document.querySelector('dropdown').display = "none";
+  // }
+})
+
+
+

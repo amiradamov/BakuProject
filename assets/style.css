@@ -29,6 +29,10 @@ body {
     color: var(--whitish-color) !important;
 }
 
+.btn:focus {
+    box-shadow: none !important;
+}
+
 #logo {
     width: 10rem;
 }
@@ -40,6 +44,7 @@ body {
 .nav-link:hover {
     color: var(--yellow-color);
 }
+
 
 .fa {
     cursor: pointer;
@@ -68,9 +73,6 @@ body {
     width: 22rem;
 }
 
-.about-us {
-    /* border-left: 2px solid var(--turquoise-color); */
-}
 
 .title {
     font-size: 1.5rem;
@@ -133,29 +135,39 @@ select {
 }
 
 
-button {
+.btn-test {
     color: var(--whitish-color) !important;
     border: 1px solid var(--yellow-color) !important;
     background-color: var(--yellow-color) !important;
 }
 
 .btn-text-classifier {
-    width: 48.5%;
-    background-color: transparent !important;
-    border: 1px solid var(--purple-color) !important;
+    /* width: 48.5%; */
+    background-color: transparent;
+    border: 1px solid var(--purple-color);
 }
 
 .btn-lemmatizer {
-    width: 48.5%;
-    background-color: transparent !important;
-    border: 1px solid var(--purple-color) !important;
+    /* width: 48.5%; */
+    background-color: transparent;
+    border: 1px solid var(--purple-color);
+}
+
+.btn-text-classifier:hover {
+    background-color: var(--purple-color);
+    border: 1px solid var(--purple-color);
+}
+
+.btn-lemmatizer:hover {
+    background-color: var(--purple-color);
+    border: 1px solid var(--purple-color);
 }
 
 .algorithm-btn {
     width: 100%;
 }
 
-button:hover {
+.btn-test:hover {
     background-color: var(--purple-color) !important;
     border: 1px solid var(--purple-color) !important;
 }
@@ -164,6 +176,10 @@ button:hover {
     font-family: GilroyMedium;
     color: var(--yellow-color);
     font-size: 1.5rem;
+}
+
+#dropdown {
+    display: none;
 }
 
 @media screen and (max-width: 480px) {
