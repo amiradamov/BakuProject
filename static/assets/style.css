@@ -1,0 +1,210 @@
+@font-face {
+    font-family: GilroyRegular;
+    src: url(./Gilroy/Gilroy-Regular.otf);
+}
+
+@font-face {
+    font-family: GilroyMedium;
+    src: url(./Gilroy/Gilroy-Medium.otf);
+}
+
+@font-face {
+    font-family: GilroyBold;
+    src: url(./Gilroy/Gilroy-Bold.otf);
+}
+
+:root {
+    --dark-bg-color: #212B38;
+    --purple-color: #726EFF;
+    --turquoise-color: #5AFFE7;
+    --dark-turqoise-color: #08C6AB;
+    --yellow-color: #F2AD27;
+    --whitish-color: #EFEEEE;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: GilroyMedium !important;
+    background-color: var(--dark-bg-color) !important;
+    color: var(--whitish-color) !important;
+}
+
+.btn:focus {
+    box-shadow: none !important;
+}
+
+#logo {
+    width: 10rem;
+}
+
+.nav-link {
+    color: var(--whitish-color);
+}
+
+.nav-link:hover {
+    color: var(--yellow-color);
+}
+
+
+.fa {
+    cursor: pointer;
+    color: var(--whitish-color);
+}
+
+.fa:hover {
+    color: var(--yellow-color);
+}
+
+.fa-caret-down {
+    font-size: 0.1rem;
+}
+
+.fa-check {
+    color: var(--yellow-color);
+}
+
+#banner {
+    width: 100%;
+    height: 20rem;
+    background-image: url('./images/banner-bg.png');
+    background-size: cover;
+}
+.banner-image {
+    width: 22rem;
+}
+
+
+.title {
+    font-size: 1.5rem;
+}
+
+.banner-title {
+    font-size: 2.5rem;
+    font-family: GilroyBold;
+}
+
+.colored {
+    color: var(--yellow-color);
+}
+
+.text {
+    font-size: 1rem;
+    font-family: GilroyRegular;
+    border-left: 2px solid var(--turquoise-color);
+}
+
+#project-idea-img {
+    width: 23rem;
+}
+
+.us-img {
+    width: 8rem;
+}
+
+.faculties {
+    background-color: var(--dark-turqoise-color);
+    padding: 5px 10px;
+    /* color: var(--dark-bg-color); */
+    border-radius: 20px;
+}
+
+.statistics {
+    font-family: GilroyBold;
+    font-size: 4rem;
+    color: var(--yellow-color);
+}
+
+#statistics {
+    background-image: url("./images/statistics-bg.png");
+    background-size: cover;
+}
+
+.names {
+    font-size: 1.2rem;
+}
+
+textarea {
+    background-color: transparent  !important;
+    outline: none  !important;
+    color: var(--whitish-color) !important;
+}
+
+select {
+    background-color: transparent  !important;
+    color: var(--whitish-color) !important;
+}
+
+
+.btn-test {
+    color: var(--whitish-color) !important;
+    border: 1px solid var(--yellow-color) !important;
+    background-color: var(--yellow-color) !important;
+}
+
+.btn-text-classifier {
+    /* width: 48.5%; */
+    background-color: transparent;
+    border: 1px solid var(--purple-color);
+}
+
+.btn-lemmatizer {
+    /* width: 48.5%; */
+    background-color: transparent;
+    border: 1px solid var(--purple-color);
+}
+
+.btn-text-classifier:hover {
+    background-color: var(--purple-color);
+    border: 1px solid var(--purple-color);
+}
+
+.btn-lemmatizer:hover {
+    background-color: var(--purple-color);
+    border: 1px solid var(--purple-color);
+}
+
+.algorithm-btn {
+    width: 100%;
+}
+
+.btn-test:hover {
+    background-color: var(--purple-color) !important;
+    border: 1px solid var(--purple-color) !important;
+}
+
+.subtitle {
+    font-family: GilroyMedium;
+    color: var(--yellow-color);
+    font-size: 1.5rem;
+}
+
+#algorithms {
+    padding: 0.5rem 0.5rem 1.2rem 0.5rem;
+    border: 1px solid var(--purple-color) !important;
+    border-radius: 3%;
+}
+
+@media screen and (max-width: 480px) {
+    .statistics {
+        font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .banner-title {
+        font-size: 1.2rem
+    }
+
+    #banner {
+        width: 100%;
+        height: 16rem;
+    }
+  }
+
+@media screen and (max-width: 768px) {
+    .statistics {
+        font-size: 2rem;
+    }
+}
