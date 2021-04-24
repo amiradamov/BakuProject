@@ -29,7 +29,7 @@ $(document).ready(function () {
 
       setTimeout(function () {
         increment(elem, finalVal);
-      }, 30)
+      }, 80)
     }
   };
 });
@@ -39,27 +39,6 @@ $(document).ready(function () {
   const textClassifier = document.getElementById("text-classifier");
   const lemmatizer = document.getElementById("lemmatizer");
   const algorithms = document.getElementById('algorithms');
-
-  // textClassifier.addEventListener("mouseover", mouseEvent1);
-  // textClassifier.addEventListener("mouseout", mouseEvent2);
-  // lemmatizer.addEventListener("mouseover", mouseEvent3);
-  // lemmatizer.addEventListener("mouseout", mouseEvent4);
-
-  // function mouseEvent1(){
-  //   textClassifier.style.backgroundColor = '#726EFF';
-  // }
-
-  // function mouseEvent2() {
-  //   textClassifier.style.backgroundColor = 'transparent';
-  // }
-
-  // function mouseEvent3() {
-  //   lemmatizer.style.backgroundColor = '#726EFF';
-  // }
-
-  // function mouseEvent4() {
-  //   lemmatizer.style.backgroundColor = 'transparent';
-  // }
 
   $("#text-classifier").on("click", changeColor1);
   $("#lemmatizer").on("click", changeColor2);
@@ -82,4 +61,19 @@ $(document).ready(function () {
   $(function () {
     $('[data-toggle="popover"]').popover()
 })
+
+linkedin("#overlay_narmina", "#img_narmina");
+linkedin("#overlay_amir", "#img_amir");
+linkedin("#overlay_ismayil", "#img_ismayil");
+linkedin("#overlay_gunash", "#img_gunash");
+linkedin("#overlay_abzetdinm", "#img_abzetdinm");
+linkedin("#overlay_samirm", "#img_samirm");
+
+function linkedin(overlay_elem, elem) {
+$(overlay_elem).hover(
+   function(){
+    $(elem).css('opacity','20%');
+}, function(){
+    $(elem).css('opacity','100%');
+})}
 })
