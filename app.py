@@ -7,6 +7,10 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+@app.route('/az')
+def index_az():
+    return render_template("az.html")
+
 @app.route('/resp', methods=['GET'])
 def response():
     # fname = request.form.get("q")

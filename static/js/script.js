@@ -75,5 +75,8 @@ $(document).ready(function () {
     textClassifier.style.backgroundColor = 'transparent';
     algorithms.classList.add("d-none");
   }
-
 })
+
+$(document).ready(function () {
+
+});
