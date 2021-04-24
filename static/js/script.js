@@ -1,7 +1,7 @@
 
 $(document).ready(function () {
   $('#books').waypoint(function () {
-    increment('books', 3000);
+    increment('books', 3090);
   }, { offset: '75%' });
 
   $('#sentences').waypoint(function () {
@@ -9,7 +9,7 @@ $(document).ready(function () {
   }, { offset: '75%' });
 
   $('#categories').waypoint(function () {
-    increment('categories', 20);
+    increment('categories', 22);
   }, { offset: '75%' });
 
   $('#words').waypoint(function () {
@@ -23,13 +23,13 @@ $(document).ready(function () {
   function increment(elem, finalVal) {
     // alert('in the function');
     var currVal = parseInt(document.getElementById(elem).innerHTML, 10);
-    if (currVal < finalVal) {
-      finalVal > 1000000 ? currVal = currVal + 10000 : currVal = currVal + 1;
+    if (currVal < finalVal) { 
+      currVal = currVal + 1;
       document.getElementById(elem).innerHTML = currVal;
 
       setTimeout(function () {
         increment(elem, finalVal);
-      }, 5)
+      }, 30)
     }
   };
 });
