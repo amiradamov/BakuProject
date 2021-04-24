@@ -136,6 +136,12 @@ select {
 
 
 .btn-test {
+    color: var(--whitish-color) ;
+    border: 1px solid var(--yellow-color) ;
+    background-color: var(--yellow-color) ;
+}
+
+.btn-area {
     color: var(--whitish-color) !important;
     border: 1px solid var(--yellow-color) !important;
     background-color: var(--yellow-color) !important;
@@ -178,15 +184,20 @@ select {
     font-size: 1.5rem;
 }
 
-#algorithms {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
+/* #algorithms {
+    padding: 100px;
     border: 1px solid var(--purple-color) !important;
     border-radius: 3%;
+} */
+
+.btn-areas {
+    color: var(--whitish-color) !important;
+    background-color: var(--dark-turqoise-color) !important;
 }
 
+.btn[title] {
+    color: var(--dark-bg-color);
+}
 
 @media screen and (max-width: 480px) {
     .statistics {

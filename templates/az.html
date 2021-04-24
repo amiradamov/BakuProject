@@ -2,284 +2,333 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="{{ url_for('static', filename='assets/bootstrap/css/bootstrap.min.css') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='assets/style.css') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='assets/font-awesome/css/font-awesome.min.css') }}">
-  <link rel="shortcut icon" href="{{ url_for('static', filename='assets/images/icon.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/font-awesome/css/font-awesome.min.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='assets/images/icon.png') }}">
 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/1.1.6/waypoints.min.js"></script>
-  <script src="static/js/script.js"></script>
-  <script src="static/assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="static/js/baku-ajax.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/1.1.6/waypoints.min.js"></script>
+    <script src="static/js/script.js"></script>
+    <script src="static/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="static/js/baku-ajax.js"></script>
 
-  <title>Baku Project</title>
+    <title>Baku Project</title>
 </head>
 
 <body>
 
-  <!-- <h1>{{message}}</h1> -->
-  <!-- Menu -->
-  <div class="container mt-3">
-    <div class="row">
-      <div class="col-2">
-        <a href="#"><img id="logo" src="static/assets/images/logo.png" alt=""></a>
-      </div>
+    <!-- <h1>{{message}}</h1> -->
+    <!-- Menu -->
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-2">
+                <a href="#"><img id="logo" src="static/assets/images/logo.png" alt=""></a>
+            </div>
 
-      <div class="col-10 d-none d-md-block mt-3">
-        <ul class="nav justify-content-end">
-          <li class="nav-item">
-            <a class="nav-link" href="#project">proyekt</a>
-          </li>
+            <div class="col-10 mt-3">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item d-none d-md-block">
+                        <a class="nav-link" href="#project">proyekt</a>
+                    </li>
 
-          <li class="nav-item ml-3">
-            <a class="nav-link" href="#analysis-tools">analiz alətləri</a>
-          </li>
+                    <li class="nav-item ml-3 d-none d-md-block">
+                        <a class="nav-link" href="#analysis-tools">analiz alətləri</a>
+                    </li>
 
-          <li class="nav-item ml-3">
-            <a class="nav-link" href="#database">databaza</a>
-          </li>
+                    <li class="nav-item ml-3 d-none d-md-block">
+                        <a class="nav-link" href="#database">databaza</a>
+                    </li>
 
-          <li class="nav-item ml-3">
-            <a class="nav-link" href="#contributors">əməkdaşlar</a>
-          </li>
+                    <li class="nav-item ml-3 d-none d-md-block">
+                        <a class="nav-link" href="#contributors">əməkdaşlar</a>
+                    </li>
 
-          <li class="nav-item ml-3" id="languages">
-            <a class="btn btn-secondary btn-test" type="button" href="/">en</a>
-            <!-- <button class="btn btn-secondary btn-test d-none" type="button">en</button> -->
-            <!-- <button class="nav-link language btn-sm">az</button> -->
-          </li>
+                    <li class="nav-item ml-3" id="languages">
+                        <a class="btn btn-secondary btn-test" type="button" href="/">en</a>
+                        <!-- <button class="btn btn-secondary btn-test d-none" type="button">en</button> -->
+                        <!-- <button class="nav-link language btn-sm">az</button> -->
+                    </li>
 
-        </ul>
-      </div>
+                </ul>
+            </div>
 
 
-    </div>
-  </div>
-
-  <!-- Banner -->
-  <div id="banner" class="container-fluid mt-5">
-    <div class="container">
-      <div class="row d-flex">
-        <div class="col-8 align-self-center">
-          <span class="banner-title">Azərbaycan kitabları üçün <br> mətn kategoriyalarının inkişafı</span><br>
-          <a class="btn btn-secondary mt-3 btn-test" href="#analysis-tools" type="button">test et</a>
         </div>
-        <div class="col-3 title justify-content-end d-none d-md-block">
-          <img src="static/assets/images/banner.png" class="banner-image" alt="">
-        </div>
-      </div>
     </div>
-  </div>
 
-  <!-- Project Idea -->
-  <div class="container mt-5" id="project">
-    <span class="title">proyekt</span>
-    <div class="row">
-      <div class="col-12 col-lg-6 about-us mt-3">
-        <div class="text pl-3 mt-3">
-          <!-- <span>
+    <!-- Banner -->
+    <div id="banner" class="container-fluid mt-5">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-8 align-self-center">
+                    <span class="banner-title">Azərbaycan kitabları üçün <br> mətn kategoriyalarının inkişafı</span><br>
+                    <a class="btn btn-secondary mt-3 btn-test" href="#analysis-tools" type="button">test et</a>
+                </div>
+                <div class="col-3 title justify-content-end d-none d-md-block">
+                    <img src="static/assets/images/banner.png" class="banner-image" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Idea -->
+    <div class="container mt-5" id="project">
+        <span class="title">proyekt</span>
+        <div class="row">
+            <div class="col-12 col-lg-6 about-us mt-3">
+                <div class="text pl-3 mt-3">
+                    <!-- <span>
             In Natural Language Processing (NLP) text classification is determining the category of a given text based
             on its content. While text classification tools exist for some languages such as English, Spanish and
             Chinese, a robust version of such a tool is not available for the Azerbaijani language.
           </span>
           <br><br> -->
-          <span>
-            Azərbaycan dilində keyfiyyətli bir mətn təsnifatı vasitəsi olmadığına görə bu layihənin əsas məqsədi Azərbaycan dili üçün möhkəm, açıq mənbəli mətn təsnifatı vasitəsi yaratmaq idi. Bundan əlavə, işimizdən əvvəl Azərbaycan kitablarına əsaslanan geniş, təmiz, düz mətnli məlumatların mövcudluğu demək olar ki, yox idi. Bu səbəbdən də layihənin ikinci məqsədi Azərbaycan dilində akrossa kateqoriyasındakı kitablara əsaslanan böyük bir sadə mətn korpusu yaratmaq idi.
-          </span>
-          <br><br>
-          <span>
-            ADA Universitetinin İnformasiya Texnologiyaları və Mühəndislik Məktəbinin professoru olan tədqiqat rəhbərlərimiz Dr. Abzatdin Adamov və Dr. Samir Rüstəmova SDP layihəsi boyunca verdiyi böyük töhfələrə və əvəzsiz rəhbərliyinə görə dərin və səmimi təşəkkürümüzü bildiririk.
-          </span>
-        </div>
-      </div>
+                    <span>
+                        Azərbaycan dilində keyfiyyətli bir mətn təsnifatı vasitəsi olmadığına görə bu layihənin əsas
+                        məqsədi Azərbaycan dili üçün möhkəm, açıq mənbəli mətn təsnifatı vasitəsi yaratmaq idi. Bundan
+                        əlavə, işimizdən əvvəl Azərbaycan kitablarına əsaslanan geniş, təmiz, düz mətnli məlumatların
+                        mövcudluğu demək olar ki, yox idi. Bu səbəbdən də layihənin ikinci məqsədi Azərbaycan dilində
+                        akrossa kateqoriyasındakı kitablara əsaslanan böyük bir sadə mətn korpusu yaratmaq idi.
+                    </span>
+                    <br><br>
+                    <span>
+                        ADA Universitetinin İnformasiya Texnologiyaları və Mühəndislik Məktəbinin professoru olan
+                        tədqiqat rəhbərlərimiz Dr. Abzatdin Adamov və Dr. Samir Rüstəmova SDP layihəsi boyunca verdiyi
+                        böyük töhfələrə və əvəzsiz rəhbərliyinə görə dərin və səmimi təşəkkürümüzü bildiririk.
+                    </span>
 
-      <div class="col-6 d-none d-lg-flex align-items-center justify-content-end">
-        <img src="static/assets/images/banner-img.png" id="project-idea-img" alt="">
-      </div>
+                    
+                </div>
+            </div>
+
+            <div class="col-6 d-none d-lg-flex align-items-center justify-content-end">
+                <img src="static/assets/images/banner-img.png" id="project-idea-img" alt="">
+            </div>
+        </div>
     </div>
-  </div>
 
 
-  <!-- Statistics -->
-  <div id="statistics">
-    <div class="container">
-      <div class="row mb-5">
-        <div class="container mt-5 mb-4">
-          <div class="row justify-content-center justify-content-md-between">
+    <!-- Statistics -->
+    <div id="statistics">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="container mt-5 mb-4">
+                    <div class="row justify-content-center justify-content-md-between">
 
-            <div class="col-8 col-md-4 justify-content-center mb-3 text-center">
-              <span class="statistics" id="books">0</span><br>
-              <span class="names mb-2">kitab</span><br>
+                        <div class="col-8 col-md-4 justify-content-center mb-3 text-center">
+                            <span class="statistics" id="books">0</span><br>
+                            <span class="names mb-2">kitab</span><br>
+                        </div>
+
+                        <div class="col-8 col-md-4 justify-content-center mb-3 text-center">
+                            <span class="statistics" id="sentences">0</span><br>
+                            <span class="names mb-2">cümlə</span><br>
+                        </div>
+
+                        <div class="col-8 col-md-4 justify-content-center mb-3 text-center">
+                            <span class="statistics" id="categories">0</span><br>
+                            <span class="names mb-2">kateqoriya</span><br>
+                        </div>
+
+                        <div class="col-8 col-md-4 justify-content-center mb-3 text-center">
+                            <span class="statistics" id="words">0</span><br>
+                            <span class="names mb-2">söz</span><br>
+                        </div>
+
+                        <div class="col-8 col-md-4 justify-content-center mb-3 text-center">
+                            <span class="statistics" id="unique-words">0</span><br>
+                            <span class="names mb-2">təkraredilməz söz</span><br>
+                        </div>
+
+                        <div class="col-8 col-md-4 justify-content-center mb-3 text-center">
+
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="col-8 col-md-4 justify-content-center mb-3 text-center">
-              <span class="statistics" id="sentences">0</span><br>
-              <span class="names mb-2">cümlə</span><br>
-            </div>
-
-            <div class="col-8 col-md-4 justify-content-center mb-3 text-center">
-              <span class="statistics" id="categories">0</span><br>
-              <span class="names mb-2">kateqoriya</span><br>
-            </div>
-
-            <div class="col-8 col-md-4 justify-content-center mb-3 text-center">
-              <span class="statistics" id="words">0</span><br>
-              <span class="names mb-2">söz</span><br>
-            </div>
-
-            <div class="col-8 col-md-4 justify-content-center mb-3 text-center">
-              <span class="statistics" id="unique-words">0</span><br>
-              <span class="names mb-2">təkraredilməz söz</span><br>
-            </div>
-
-            <div class="col-8 col-md-4 justify-content-center mb-3 text-center">
-
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
 
-  <!-- Analysis Tools -->
-  <div class="container mt-3 mb-3" id="analysis-tools">
-    <span class="title">analiz alətləri</span>
-    <div class="row mt-3">
+    <!-- Analysis Tools -->
+    <div class="container mt-3 mb-3" id="analysis-tools">
+        <span class="title">analiz alətləri</span>
+        <div class="row mt-3">
 
-      <div class="col-12 col-md-2">
-        <div class="input-group mt-4 d-flex flex-column">
-          <form action="GET">
-            <input class="btn btn-secondary btn-lemmatizer mb-3 w-100" id="lemmatizer" type="button" value="lemmatizer">
-            <input class="btn btn-secondary btn-text-classifier mb-3 mt-2 w-100" id="text-classifier" type="button"
-              value="text classifier">
-          </form>
+            <div class="col-12 col-md-2">
+                <div class="input-group mt-4 d-flex flex-column">
+                    <form action="GET">
+                        <input class="btn btn-secondary btn-lemmatizer mb-3 w-100" id="lemmatizer" type="button"
+                            value="lemmatizer">
+                        <input class="btn btn-secondary btn-text-classifier mb-3 mt-2 w-100" id="text-classifier"
+                            type="button" value="text classifier">
+                    </form>
 
-          <div class="d-none" id="algorithms">
-            <div class="form-check mb-2">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
-                checked>
-              <label class="form-check-label" for="exampleRadios1">
-                naive bayes
-              </label>
+                    <div class="d-none" id="algorithms">
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                                value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                naive bayes
+                            </label>
+                        </div>
+
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                                value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                                neural networks
+                            </label>
+                        </div>
+
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3"
+                                value="option3">
+                            <label class="form-check-label" for="exampleRadios3">
+                                random forest
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4"
+                                value="option4">
+                            <label class="form-check-label" for="exampleRadios4">
+                                support vector machine
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
-            <div class="form-check mb-2">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-              <label class="form-check-label" for="exampleRadios2">
-                neural networks
-              </label>
+            <div class="col-12 col-md-5">
+                <form action="/" method="GET" name="baku-form">
+                    <div class="form-group mt-3">
+                        <span class="subtitle">daxil olunan</span>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" name="input" rows="10"
+                            placeholder="mətni daxil edin..."></textarea>
+                    </div>
+                </form>
             </div>
 
-            <div class="form-check mb-2">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-              <label class="form-check-label" for="exampleRadios3">
-                random forest
-              </label>
-            </div>
-
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
-              <label class="form-check-label" for="exampleRadios4">
-                support vector machine
-              </label>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="col-12 col-md-5">
-        <form action="/" method="GET" name="baku-form">
-          <div class="form-group mt-3">
-            <span class="subtitle">daxil olunan</span>
-            <textarea class="form-control" id="exampleFormControlTextarea1" name="input" rows="10"
-              placeholder="mətni daxil edin..."></textarea>
-          </div>
-        </form>
-      </div>
-
-      <div class="col-12 col-md-5">
-        <form action="">
-          <div class="form-group mt-3">
-            <span class="subtitle">nəticə</span>
-            <div id="baku-output">
-            </div>
-            <!-- {% if message %}
+            <div class="col-12 col-md-5">
+                <form action="">
+                    <div class="form-group mt-3">
+                        <span class="subtitle">nəticə</span>
+                        <div id="baku-output">
+                        </div>
+                        <!-- {% if message %}
           <h1>{{message}}</h1>
           {% endif %} -->
-            <!-- <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"
+                        <!-- <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"
             placeholder="the result will appear here..."></textarea> -->
-            <textarea class="form-control" id="exampleFormControlTextarea2" rows="10"
-              placeholder="nəticə burda görsənəcək..."></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea2" rows="10"
+                            placeholder="nəticə burda görsənəcək..."></textarea>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-12 d-flex justify-content-end">
+                <button class="btn btn-secondary btn-test" onclick="interact(document.forms[0].input.value)">
+                    nəticəni gör
+                </button>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Contributors -->
+
+    <div class="container mt-5 mb-4" id="contributors">
+        <span class="title">əməkdaşlar</span>
+        <div class="row justify-content-around mt-5">
+    
+          <div class="col-6 col-md-3 justify-content-center mb-3 text-center">
+    
+            <div class="contributor">
+              <img class="us-img mb-2" src="static/assets/images/abzatdin-muellim.png" id="abzetdinm" alt=""><br>
+              <a href="https://www.linkedin.com/in/adamov/" target="_blank">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </div>
+    
+            <span class="names mb-2">Abzətdin Adamov</span><br>
+            <span class="faculties">rəhbər</span>
           </div>
-        </form>
+    
+          <div class="col-6 col-md-3 justify-content-center mb-3 text-center">
+    
+            <div class="contributor">
+              <img class="us-img mb-2" src="static/assets/images/samir-muellim.png" alt=""><br>
+              <a href="https://www.linkedin.com/in/samir-rustamov-83752427/" target="_blank">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </div>
+    
+            <span class="names mb-2">Samir Rüstəmov</span><br>
+            <span class="faculties">rəhbər</span>
+          </div>
+        </div>
+    
+        <div class="row justify-content-between mt-5">
+    
+          <div class="col-6 col-md-3 justify-content-center mb-3 text-center">
+            <div class="contributor">
+              <img class="us-img mb-2" src="static/assets/images/amir.png" alt=""><br>
+              <a href="https://www.linkedin.com/in/amir-adamov-84029b1ab/" target="_blank">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </div>
+    
+            <span class="names mb-2">Amir Adamov</span><br>
+            <span class="faculties">tələbə | BSCS'21</span>
+          </div>
+    
+          <div class="col-6 col-md-3 justify-content-center mb-3 text-center">
+            <div class="contributor">
+              <img class="us-img mb-2" src="static/assets/images/gunesh.png" alt=""><br>
+              <a href="https://www.linkedin.com/in/gunash-hajiyeva-b70263167/" target="_blank">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </div>
+            <span class="names mb-2">Günəş Hacıyeva</span><br>
+            <span class="faculties">tələbə | BSCS'21</span>
+          </div>
+    
+          <div class="col-6 col-md-3 justify-content-center mb-3 text-center">
+            <div class="contributor">
+              <img class="us-img mb-2" src="static/assets/images/ismayil.png" alt=""><br>
+              <a href="https://www.linkedin.com/in/ismayil-karimli/" target="_blank">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </div>
+            <span class="names mb-2">İsmayıl Kərimli</span><br>
+            <span class="faculties">tələbə | BSIT'21</span>
+          </div>
+    
+          <div class="col-6 col-md-3 justify-content-center mb-3 text-center">
+            <div class="contributor">
+              <img class="us-img mb-2" src="static/assets/images/narmina.png" alt=""><br>
+              <a href="https://www.linkedin.com/in/nargayeva/" target="_blank">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </div>
+            <span class="names mb-2">Nərminə Ağayeva</span><br>
+            <span class="faculties">tələbə | BSIT'22</span>
+          </div>
+    
+        </div>
       </div>
 
-      <div class="col-12 d-flex justify-content-end">
-        <button class="btn btn-secondary btn-test" onclick="interact(document.forms[0].input.value)">
-          nəticəni gör
-        </button>
-
-      </div>
-    </div>
-  </div>
-  </div>
-
-  <!-- Contributors -->
-
-  <div class="container mt-5 mb-4" id="contributors">
-    <span class="title">əməkdaşlar</span>
-    <div class="row justify-content-around mt-5">
-      <div class="col-6 col-md-3 justify-content-center mb-3 text-center">
-        <img class="us-img mb-2" src="static/assets/images/abzatdin-muellim.png" alt=""><br>
-        <span class="names mb-2">Abzətdin Adamov</span><br>
-        <span class="faculties">rəhbər</span>
-      </div>
-
-      <div class="col-6 col-md-3 justify-content-center mb-3 text-center">
-        <img class="us-img mb-2" src="static/assets/images/samir-muellim.png" alt=""><br>
-        <span class="names mb-2">Samir Rüstəmov</span><br>
-        <span class="faculties">rəhbər</span>
-      </div>
-    </div>
-
-    <div class="row justify-content-between mt-5">
-
-      <div class="col-6 col-md-3 justify-content-center mb-3 text-center">
-        <img class="us-img mb-2" src="static/assets/images/amir.png" alt=""><br>
-        <span class="names mb-2">Amir Adamov</span><br>
-        <span class="faculties">tələbə | BSCS'21</span>
-      </div>
-
-      <div class="col-6 col-md-3 justify-content-center mb-3 text-center">
-        <img class="us-img mb-2" src="static/assets/images/gunesh.png" alt=""><br>
-        <span class="names mb-2">Günəş Hacıyeva</span><br>
-        <span class="faculties">tələbə | BSCS'21</span>
-      </div>
-
-      <div class="col-6 col-md-3 justify-content-center mb-3 text-center">
-        <img class="us-img mb-2" src="static/assets/images/ismayil.png" alt=""><br>
-        <span class="names mb-2">Ismayıl Kərimli</span><br>
-        <span class="faculties">tələbə | BSIT'21</span>
-      </div>
-
-      <div class="col-6 col-md-3 justify-content-center mb-3 text-center">
-        <img class="us-img mb-2" src="static/assets/images/narmina.png" alt=""><br>
-        <span class="names mb-2">Nərminə Ağayeva</span><br>
-        <span class="faculties">tələbə | BSIT'22</span>
-      </div>
-
-    </div>
-  </div>
 
 </body>
 
