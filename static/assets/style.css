@@ -217,6 +217,10 @@ select {
     text-align: center;
   }
 
+  hr {
+      border-top: 1px solid var(--whitish-color);
+  }
+
   /* #contributors {
     background-image: url('./images/banner-bg.png');
     background-size: cover;
@@ -234,7 +238,7 @@ select {
     }
 
     .banner-title {
-        font-size: 1.2rem
+        font-size: 3rem;
     }
 
     #banner {
@@ -257,16 +261,50 @@ select {
     .banner-title {
         font-size: 1rem
     }
+
+    #algorithms {
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    }
   }
 
 /* Medium devices (tablets, 768px and down) */
 @media (max-width: 768px) { 
-    .statistics {
+    /* .statistics {
+        font-size: 1.4rem;
+    }
+
+    .subtitle {
         font-size: 1.2rem;
     }
-    .banner-image {
-        display: none;
+
+    .banner-title {
+        font-size: 1.8rem
     }
+
+    #banner {
+        width: 100%;
+        height: 10rem;
+    }
+
+    .faculties {
+        font-size: 0.8rem;
+    }
+
+    .names {
+        font-size: 0.8rem;
+    }
+
+    .text {
+        font-size: 0.8rem;
+    }
+
+    .banner-title {
+        font-size: 1rem
+    }
+
+    #algorithms {
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    } */
  }
 
  /* Large devices (desktops, 992px and down) */
