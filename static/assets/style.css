@@ -73,7 +73,6 @@ body {
     width: 22rem;
 }
 
-
 .title {
     font-size: 1.5rem;
 }
@@ -227,7 +226,7 @@ select {
 /* Small devices (phones, 480px and down) */
 @media screen and (max-width: 480px) {
     .statistics {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .subtitle {
@@ -242,17 +241,36 @@ select {
         width: 100%;
         height: 10rem;
     }
+
+    .faculties {
+        font-size: 0.8rem;
+    }
+
+    .names {
+        font-size: 0.8rem;
+    }
+
+    .text {
+        font-size: 0.8rem;
+    }
+
+    .banner-title {
+        font-size: 1rem
+    }
   }
 
 /* Medium devices (tablets, 768px and down) */
 @media (max-width: 768px) { 
-    #banner {
+    .statistics {
+        font-size: 1.2rem;
+    }
+    .banner-image {
+        display: none;
     }
  }
 
  /* Large devices (desktops, 992px and down) */
 @media (min-width: 992px) { 
-    
 }
 
 /* Extra large devices (large desktops, 1200px and down)  */
