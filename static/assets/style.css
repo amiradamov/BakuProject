@@ -217,20 +217,25 @@ select {
     text-align: center;
   }
 
-  hr {
-      border-top: 1px solid var(--whitish-color);
+  .report {
+      color: var(--yellow-color);
+      text-decoration: underline;
   }
 
-  /* #contributors {
-    background-image: url('./images/banner-bg.png');
-    background-size: cover;
-} */
+  .report:hover {
+    color: var(--yellow-color);
+    text-decoration: underline;
+}
 
 
 /* Small devices (phones, 480px and down) */
 @media screen and (max-width: 480px) {
     .statistics {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
+    }
+
+    .title {
+        font-size: 1.2rem;
     }
 
     .subtitle {
@@ -238,12 +243,12 @@ select {
     }
 
     .banner-title {
-        font-size: 3rem;
+        font-size: 1.3rem;
     }
 
     #banner {
         width: 100%;
-        height: 10rem;
+        height: 12rem;
     }
 
     .faculties {
@@ -258,32 +263,32 @@ select {
         font-size: 0.8rem;
     }
 
-    .banner-title {
-        font-size: 1rem
-    }
-
     #algorithms {
         padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    }
+
+    .btn-test {
+        font-size: 1rem;
     }
   }
 
 /* Medium devices (tablets, 768px and down) */
-@media (max-width: 768px) { 
-    /* .statistics {
-        font-size: 1.4rem;
+@media (max-width: 768px) and (min-width: 480px) { 
+    .statistics {
+        font-size: 2rem;
+    }
+
+    .nav-link {
+        font-size: 0.8rem;
     }
 
     .subtitle {
         font-size: 1.2rem;
     }
 
-    .banner-title {
-        font-size: 1.8rem
-    }
-
     #banner {
         width: 100%;
-        height: 10rem;
+        height: 14rem;
     }
 
     .faculties {
@@ -291,20 +296,20 @@ select {
     }
 
     .names {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .text {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .banner-title {
-        font-size: 1rem
+        font-size: 2rem;
     }
 
     #algorithms {
         padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-    } */
+    }
  }
 
  /* Large devices (desktops, 992px and down) */
