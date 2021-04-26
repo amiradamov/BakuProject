@@ -11,13 +11,29 @@ def index():
 def index_az():
     return render_template("az.html")
 
-@app.route('/resp', methods=['GET'])
+@app.route('/resp', methods=['POST'])
 def response():
-    # fname = request.form.get("q")
-    fname = request.args.get("q")
-    ex1 = example(fname)
-    # return render_template('index.html', message = ex1)
-    return ex1
+
+    outText = ""
+    inText = request.args.get("q")
+    lematizer = request.args.get("lem")
+    classifier = request.args.get("class")
+
+    if (lematizer == 'true'):
+        outText = "LEMATIZER " + inText
+
+    elif (classifier == "naive_bayes"):
+        outText = "naive_bayes " + inText
+
+    elif (classifier == "neural_networks"):
+        outText = "neural_networks " + inText
+
+    elif (classifier == "random_forest"):
+        outText = "random_forest " + inText
+
+    elif (classifier == "support_vector_machine"):
+        outText = "support_vector_machine " + inText
+    return outText
 
 if __name__ == "__main__":
     app.run(debug=True)

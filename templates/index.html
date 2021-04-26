@@ -162,15 +162,14 @@
 
       <div class="col-12 col-lg-2">
         <div class="input-group mt-4 d-flex flex-column">
-          <form action="GET">
-            <input class="btn btn-secondary btn-lemmatizer mb-2 w-100" id="lemmatizer" type="button" value="lemmatizer">
-            <input class="btn btn-secondary btn-text-classifier mb-3 mt-2 w-100" id="text-classifier" type="button"
+          <form method="POST" action="/resp" name="bakuForm">
+            <input class="btn btn-secondary btn-lemmatizer mb-2 w-100" name="lemmatizer" id="lemmatizer" type="checkbox" > lemmatizer
+            <input class="btn btn-secondary btn-text-classifier mb-3 mt-2 w-100" name="text-classifier"id="text-classifier" type="button"
               value="text classifier">
-          </form>
 
           <div class="d-none text-center" id="algorithms">
             <div class="form-check mb-2">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="naive_bayes"
                 checked>
               <label class="form-check-label" for="exampleRadios1">
                 naive bayes
@@ -178,21 +177,21 @@
             </div>
 
             <div class="form-check mb-2">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="neural_networks">
               <label class="form-check-label" for="exampleRadios2">
                 neural networks
               </label>
             </div>
 
             <div class="form-check mb-2">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="random_forest">
               <label class="form-check-label" for="exampleRadios3">
                 random forest
               </label>
             </div>
 
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="support_vector_machine">
               <label class="form-check-label" for="exampleRadios4">
                 support vector machine
               </label>
@@ -203,38 +202,35 @@
       </div>
 
       <div class="col-12 col-lg-5">
-        <form action="/" method="GET" name="baku-form">
+
           <div class="form-group mt-3">
             <span class="subtitle">input</span>
-            <textarea class="form-control" id="exampleFormControlTextarea1" name="input" rows="10"
+            <textarea class="form-control" id="exampleFormControlTextarea1" name="inText" rows="10"
               placeholder="type your text here..."></textarea>
           </div>
-        </form>
       </div>
 
       <div class="col-12 col-lg-5">
-        <form action="">
           <div class="form-group mt-3">
             <span class="subtitle">output</span>
             <div id="baku-output">
             </div>
-            <!-- {% if message %}
-          <h1>{{message}}</h1>
-          {% endif %} -->
-            <!-- <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"
-            placeholder="the result will appear here..."></textarea> -->
+           
             <textarea class="form-control" id="exampleFormControlTextarea2" rows="10"
-              placeholder="the result will appear here..."></textarea>
+              placeholder="the result will appear here..." name="outText"></textarea>
           </div>
         </form>
+
+        <div class="col-12 d-flex justify-content-end">
+          <button class="btn btn-secondary btn-test" onclick="interact(document.bakuForm.inText.value, document.bakuForm.lemmatizer.checked, document.bakuForm.exampleRadios.value)">
+            see the result
+          </button>
+  
+        </div>
+  
+
       </div>
 
-      <div class="col-12 d-flex justify-content-end">
-        <button class="btn btn-secondary btn-test" onclick="interact(document.forms[0].input.value)">
-          see the result
-        </button>
-
-      </div>
     </div>
   </div>
   </div>

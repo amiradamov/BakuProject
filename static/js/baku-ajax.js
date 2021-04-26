@@ -1,8 +1,8 @@
 var xmlHttp;
 
-function interact(str) {
+function interact(inText, lemmatizer, classifier) {
 
-	if (str.length==0) { 
+	if (inText.length==0) { 
   		document.getElementById("txtHint").innerHTML="";
   		return;
   	}
@@ -12,18 +12,20 @@ function interact(str) {
   		return;
   	} 
 	var url="http://localhost:5000/resp";
-	url=url+"?q="+str;
+	url=url+"?q="+inText;
+	url=url+"&lem="+lemmatizer;
+	url=url+"&class="+classifier;
 	url=url+"&sid="+Math.random();
-	// alert(url);
+	alert(url);
 	xmlHttp.onreadystatechange=stateChanged; 
-	xmlHttp.open("GET",url,true);
+	xmlHttp.open("POST",url,true);
 	xmlHttp.send(null);
 
 } 
 
 function stateChanged() { 
 	if (xmlHttp.readyState==4 || xmlHttp.readyState=="complete") { 
- 		document.getElementById("baku-output").innerHTML=xmlHttp.responseText 
+ 		document.getElementById("exampleFormControlTextarea2").innerHTML=xmlHttp.responseText 
  	} 
 }
 	
