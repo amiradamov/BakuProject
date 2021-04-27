@@ -34,7 +34,7 @@
         <a href="#"><img id="logo" src="static/assets/images/logo.png" alt=""></a>
       </div>
 
-      <div class="col-10 mt-3">
+      <div class="col-10 mt-2 mt-lg-3">
         <ul class="nav justify-content-end">
           <li class="nav-item d-none d-md-block align-self-center">
             <a class="nav-link" href="#project">project</a>
@@ -45,7 +45,8 @@
           </li>
 
           <li class="nav-item ml-3 d-none d-md-block">
-            <a class="nav-link" href="#database">database</a>
+            <a class="nav-link" href="https://mega.nz/folder/IsclzAgJ#qJzgtXzoOAMrydG0Wp81yQ"
+              target="_blank">database</a>
           </li>
 
           <li class="nav-item ml-3 d-none d-md-block">
@@ -64,9 +65,10 @@
   <!-- Banner -->
   <div id="banner" class="container-fluid mt-5">
     <div class="container">
-      <div class="row mt-3 mt-lg-0">
-        <div class="col-12 col-lg-8 text-center text-lg-left align-self-center">
-          <span class="banner-title">development of text categorization for Azerbaijani books</span><br>
+      <div class="row mt-3 mt-lg-0 justify-content-lg-between justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8 text-center text-lg-left align-self-center">
+          <span class="banner-title">Large High-quality Corpus building from Web and Text
+            Classification for Azerbaijani Language</span><br>
           <a class="btn btn-secondary mt-3 btn-test justify-content-center" href="#analysis-tools">test now</a>
         </div>
         <div class="col-4 justify-content-end d-none d-lg-block">
@@ -74,6 +76,7 @@
         </div>
       </div>
     </div>
+  </div>
   </div>
 
   <!-- Project Idea -->
@@ -103,7 +106,7 @@
             "Development of text classification for Azerbaijani Language".
           </span>
           <br><br>
-          <a href="">see our project report</a>
+          <a class="report" href="../static/assets/SDP_Final_Report.pdf" target="_blank">see our thesis here</a>
         </div>
       </div>
 
@@ -122,27 +125,27 @@
           <div class="row justify-content-center justify-content-lg-between">
 
             <div class="col-8 col-lg-4 justify-content-center mb-3 text-center">
-              <span class="statistics" id="books">3000+</span><br>
+              <span class="statistics" id="books">3068</span><br>
               <span class="names mb-2">books</span><br>
             </div>
 
             <div class="col-8 col-lg-4 justify-content-center mb-3 text-center">
-              <span class="statistics" id="sentences">6256757</span><br>
+              <span class="statistics" id="sentences">6256737</span><br>
               <span class="names mb-2">sentences</span><br>
             </div>
 
             <div class="col-8 col-lg-4 justify-content-center mb-3 text-center">
-              <span class="statistics" id="categories">22</span><br>
+              <span class="statistics" id="categories">0</span><br>
               <span class="names mb-2">categories</span><br>
             </div>
 
             <div class="col-8 col-lg-4 justify-content-center mb-3 text-center">
-              <span class="statistics" id="words">77994551</span><br>
+              <span class="statistics" id="words">77994525</span><br>
               <span class="names mb-2">words</span><br>
             </div>
 
             <div class="col-8 col-lg-4 justify-content-center mb-3 text-center">
-              <span class="statistics" id="unique-words">1883105</span><br>
+              <span class="statistics" id="unique-words">1883083</span><br>
               <span class="names mb-2">unique words</span><br>
             </div>
 
@@ -161,73 +164,84 @@
     <div class="row mt-3">
 
       <div class="col-12 col-lg-2">
-        <div class="input-group mt-4 d-flex flex-column">
+        <div class="input-group mt-4 d-flex flex-column justify-content-center">
           <form method="POST" action="/resp" name="bakuForm">
-            <input class="btn btn-secondary btn-lemmatizer mb-2 w-100" name="lemmatizer" id="lemmatizer" type="checkbox" > lemmatizer
-            <input class="btn btn-secondary btn-text-classifier mb-3 mt-2 w-100" name="text-classifier"id="text-classifier" type="button"
-              value="text classifier">
 
-          <div class="d-none text-center" id="algorithms">
-            <div class="form-check mb-2">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="naive_bayes"
-                checked>
-              <label class="form-check-label" for="exampleRadios1">
-                naive bayes
-              </label>
+            <div class="algorithms mb-3">
+              <input type="radio" id="lemmatizer" name="algorithms" value="lemmatizer" class="mr-2">
+              <label for="lemmatizer">lemmatizer</label><br>
             </div>
 
-            <div class="form-check mb-2">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="neural_networks">
-              <label class="form-check-label" for="exampleRadios2">
-                neural networks
-              </label>
+            <div class="algorithms">
+              <input type="radio" id="text-classifier" name="algorithms" value="text-classifier" class="mr-2">
+              <label for="text-classifier">text-classifier</label><br>
             </div>
 
-            <div class="form-check mb-2">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="random_forest">
-              <label class="form-check-label" for="exampleRadios3">
-                random forest
-              </label>
-            </div>
+            <!-- <input class="btn btn-secondary btn-lemmatizer mb-2 w-100" name="lemmatizer" id="lemmatizer"
+              type="checkbox"> lemmatizer
+            <input class="btn btn-secondary btn-text-classifier mb-3 mt-2 w-100" name="text-classifier"
+              id="text-classifier" type="button" value="text classifier"> -->
 
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="support_vector_machine">
-              <label class="form-check-label" for="exampleRadios4">
-                support vector machine
-              </label>
-            </div>
-          </div>
+            <!-- <div class="d-none text-center" id="algorithms">
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                  value="naive_bayes" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                  naive bayes
+                </label>
+              </div>
+
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                  value="neural_networks">
+                <label class="form-check-label" for="exampleRadios2">
+                  neural networks
+                </label>
+              </div>
+
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3"
+                  value="random_forest">
+                <label class="form-check-label" for="exampleRadios3">
+                  random forest
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4"
+                  value="support_vector_machine">
+                <label class="form-check-label" for="exampleRadios4">
+                  support vector machine
+                </label>
+              </div>
+            </div> -->
 
         </div>
       </div>
 
       <div class="col-12 col-lg-5">
 
-          <div class="form-group mt-3">
-            <span class="subtitle">input</span>
-            <textarea class="form-control" id="exampleFormControlTextarea1" name="inText" rows="10"
-              placeholder="type your text here..."></textarea>
-          </div>
+        <div class="form-group mt-3">
+          <span class="subtitle">input</span>
+          <textarea class="form-control" id="exampleFormControlTextarea1" name="inText" rows="10"
+            placeholder="type your text here..."></textarea>
+        </div>
       </div>
 
       <div class="col-12 col-lg-5">
-          <div class="form-group mt-3">
-            <span class="subtitle">output</span>
-            <div id="baku-output">
-            </div>
-           
-            <textarea class="form-control" id="exampleFormControlTextarea2" rows="10"
-              placeholder="the result will appear here..." name="outText"></textarea>
-          </div>
+        <div class="form-group mt-3">
+          <span class="subtitle">output</span>
+          <div id="baku-output"></div>
+          <textarea class="form-control" id="exampleFormControlTextarea2" rows="10"
+            placeholder="the result will appear here..." name="outText" readonly></textarea>
+        </div>
         </form>
-
-        <div class="col-12 d-flex justify-content-end">
-          <button class="btn btn-secondary btn-test" onclick="interact(document.bakuForm.inText.value, document.bakuForm.lemmatizer.checked, document.bakuForm.exampleRadios.value)">
-            see the result
-          </button>
-  
-        </div>
-  
+      </div>
+      <div class="col-12 d-flex justify-content-end">
+        <button class="btn btn-secondary btn-test"
+          onclick="interact(document.bakuForm.inText.value, document.bakuForm.algorithms.value)">
+          see the result
+        </button>
 
       </div>
 
@@ -236,7 +250,7 @@
   </div>
 
   <!-- Application Areas -->
-  <div class="container">
+  <!-- <div class="container">
     <span class="title">application areas</span>
     <div class="row mt-3">
       <div class="col-12 col-md-6 mt-4 d-flex flex-column">
@@ -251,7 +265,7 @@
         <span class="mb-3"><i class="fa fa-check mr-3" aria-hidden="true"></i>email provider</span>
       </div>
     </div>
-  </div>
+  </div> -->
 
 
   <!-- Contributors -->
@@ -272,8 +286,8 @@
             </div>
           </div>
 
-          <span class="names mb-lg-2">Abzatdin Adamov</span><br>
-          <span class="faculties">mentor</span>
+          <span class="names mb-lg-2">Dr.Abzatdin Adamov</span><br>
+          <span class="faculties">project advisor</span>
         </div>
 
         <div class="col-6 col-md-3 justify-content-center mb-3 text-center">
@@ -289,8 +303,8 @@
             </div>
           </div>
 
-          <span class="names mb-lg-2">Samir Rustamov</span><br>
-          <span class="faculties">mentor</span>
+          <span class="names mb-lg-2">Dr.Samir Rustamov</span><br>
+          <span class="faculties">project advisor</span>
         </div>
       </div>
 

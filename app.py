@@ -3,7 +3,7 @@ from example import example
 from naive_bayes_test import NBC
 from svm_classifier_test import SVMC
 from rnn_classifier_test import RNNC
-from random_forest_classifier_test import RFC
+#from random_forest_classifier_test import RFC
 from aznlp.azerbaijani_lemmatizer import AzerbaijaniLemmatizer
 from text_classification.sentence_cleaner import *
 from collections import Counter
@@ -14,8 +14,8 @@ svmc = SVMC()
 print('set up SVM classifier')
 rnnc = RNNC()
 print('set up RNN classifier')
-rfc = RFC()
-print('set up RF classifier')
+#rfc = RFC()
+#print('set up RF classifier')
 azl = AzerbaijaniLemmatizer()
 print('set up Lemmatizer')
 
@@ -35,23 +35,27 @@ def index_az():
 
 @app.route('/resp', methods=['POST'])
 def response():
-
+    print('here')
     outText = ""
     inText = request.args.get("q")
-    lematizer = request.args.get("lem")
-    classifier = request.args.get("class")
+    algorithms = request.args.get("alg")
+    print(inText)
+    print(algorithms)
+    #lematizer = request.args.get("lem")
+    #classifier = request.args.get("class")
 
-    if (lematizer == 'true'):
+    if (algorithms == 'lemmatizer'):
         print('LEMMATIZE')
+        print(inText)
         words = [word for word in inText.split()]
         print(words)
         words = clean_tokens_stopwords(words)
         outText = ' '.join(azl.lemmatize(words))
         print(outText)
-        #print('here')
         return outText
-    
-    else:
+    elif (algorithms == 'text-classifier'):
+        print('CLASSIFY')
+        print(inText)
         arr = []
         nb_out = nbc.test(inText)
         rnn_out = rnnc.test(inText)
@@ -60,7 +64,7 @@ def response():
         arr.append(rnn_out)
         arr.append(svmc_out)
         outText = most_frequent(arr)
-        return outText
+        return 'Category: ' + outText
 
     # elif (classifier == "naive_bayes"):
     #     print('NB')
@@ -88,7 +92,9 @@ def response():
     
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    from waitress import serve
+    serve(app, host="0.0.0.0", port=8080)
+#    app.run(debug=True)
 
 
 # @app.route('/response', methods=['POST'])

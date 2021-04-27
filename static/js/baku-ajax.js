@@ -1,7 +1,7 @@
 var xmlHttp;
 
 function interact(inText, lemmatizer, classifier) {
-
+	
 	if (inText.length==0) { 
   		document.getElementById("txtHint").innerHTML="";
   		return;
@@ -10,13 +10,14 @@ function interact(inText, lemmatizer, classifier) {
 	if (xmlHttp==null) {
   		// alert ("Browser does not support HTTP Request");
   		return;
-  	} 
-	var url="http://localhost:5000/resp";
+  	}
+	console.log('something happened')
+	var url="http://34.89.155.242:8080/resp";
 	url=url+"?q="+inText;
-	url=url+"&lem="+lemmatizer;
-	url=url+"&class="+classifier;
+	url=url+"&alg="+lemmatizer;
+	//url=url+"&class="+classifier;
 	url=url+"&sid="+Math.random();
-	// alert(url);
+	//alert(url);
 	xmlHttp.onreadystatechange=stateChanged; 
 	xmlHttp.open("POST",url,true);
 	xmlHttp.send(null);

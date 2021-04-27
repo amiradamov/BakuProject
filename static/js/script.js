@@ -17,7 +17,7 @@ $(document).ready(function () {
   }, { offset: '100%' });
 
   $('#unique-words').waypoint(function () {
-    increment('unique-words', 3500191);
+    increment('unique-words', 1883105);
   }, { offset: '100%' });
 
   function increment(elem, finalVal) {
