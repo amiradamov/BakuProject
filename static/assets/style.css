@@ -177,10 +177,11 @@ select {
     font-size: 1.5rem;
 }
 
-#algorithms {
-    padding: 0.5rem 0.5rem 1.2rem 0.5rem;
+.algorithms {
+    background-clip: content-box;
+    padding: 0.5rem 0.5rem 0rem 0.5rem;
     border: 1px solid var(--purple-color) !important;
-    border-radius: 3%;
+    border-radius: 5%;
 }
 
 .contributor {
@@ -227,6 +228,9 @@ select {
     text-decoration: underline;
 }
 
+#lemmatizer #text-classification {
+    opacity: 0;
+}
 
 /* Small devices (phones, 480px and down) */
 @media screen and (max-width: 480px) {

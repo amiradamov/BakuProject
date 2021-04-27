@@ -38,29 +38,25 @@ $(document).ready(function () {
 
   const textClassifier = document.getElementById("text-classifier");
   const lemmatizer = document.getElementById("lemmatizer");
-  const algorithms = document.getElementById('algorithms');
 
   $("#text-classifier").on("click", changeColor1);
-  $("#lemmatizer").on("click", changeColor2);
+  $("#lemmatizer").on("click", changeColor1);
 
   function changeColor1() {
+    if(textClassifier.checked){
     textClassifier.style.backgroundColor = '#726EFF';
     lemmatizer.style.backgroundColor = 'transparent';
-    algorithms.classList.remove("d-none");
-  }
-
-  function changeColor2() {
+  } else {
     lemmatizer.style.backgroundColor = '#726EFF';
     textClassifier.style.backgroundColor = 'transparent';
-    algorithms.classList.add("d-none");
   }
+  }
+  // function changeColor2() {
+  //   lemmatizer.style.backgroundColor = '#726EFF';
+  //   textClassifier.style.backgroundColor = 'transparent';
+  // }
 })
 
-
-$(document).ready(function () {
-  $(function () {
-    $('[data-toggle="popover"]').popover()
-})
 
 linkedin("#overlay_narmina", "#img_narmina");
 linkedin("#overlay_amir", "#img_amir");
@@ -76,4 +72,4 @@ $(overlay_elem).hover(
 }, function(){
     $(elem).css('opacity','100%');
 })}
-})
+

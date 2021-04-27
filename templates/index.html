@@ -163,14 +163,25 @@
     <div class="row mt-3">
 
       <div class="col-12 col-lg-2">
-        <div class="input-group mt-4 d-flex flex-column">
+        <div class="input-group mt-4 d-flex flex-column justify-content-center">
           <form method="POST" action="/resp" name="bakuForm">
-            <input class="btn btn-secondary btn-lemmatizer mb-2 w-100" name="lemmatizer" id="lemmatizer"
+
+            <div class="algorithms mb-3">
+              <input type="radio" id="lemmatizer" name="algorithms" value="lemmatizer" class="mr-2">
+              <label for="lemmatizer">lemmatizer</label><br>
+            </div>
+
+            <div class="algorithms">
+              <input type="radio" id="text-classifier" name="algorithms" value="text-classifier" class="mr-2">
+              <label for="text-classifier">text-classifier</label><br>
+            </div>
+
+            <!-- <input class="btn btn-secondary btn-lemmatizer mb-2 w-100" name="lemmatizer" id="lemmatizer"
               type="checkbox"> lemmatizer
             <input class="btn btn-secondary btn-text-classifier mb-3 mt-2 w-100" name="text-classifier"
-              id="text-classifier" type="button" value="text classifier">
+              id="text-classifier" type="button" value="text classifier"> -->
 
-            <div class="d-none text-center" id="algorithms">
+            <!-- <div class="d-none text-center" id="algorithms">
               <div class="form-check mb-2">
                 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
                   value="naive_bayes" checked>
@@ -202,7 +213,7 @@
                   support vector machine
                 </label>
               </div>
-            </div>
+            </div> -->
 
         </div>
       </div>
@@ -223,7 +234,7 @@
           </div>
 
           <textarea class="form-control" id="exampleFormControlTextarea2" rows="10"
-            placeholder="the result will appear here..." name="outText"></textarea>
+            placeholder="the result will appear here..." name="outText" readonly></textarea>
         </div>
         </form>
 
