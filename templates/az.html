@@ -45,7 +45,7 @@
                     </li>
 
                     <li class="nav-item ml-3 d-none d-md-block">
-                        <a class="nav-link" href="#database">databaza</a>
+                        <a class="nav-link" href="https://mega.nz/folder/IsclzAgJ#qJzgtXzoOAMrydG0Wp81yQ" target="_blank">databaza</a>
                     </li>
 
                     <li class="nav-item ml-3 d-none d-md-block">
@@ -170,12 +170,13 @@
                         <div class="algorithms mb-3">
                             <input type="radio" id="lemmatizer" name="algorithms" value="lemmatizer" class="mr-2">
                             <label for="lemmatizer">lemmatizer</label><br>
-                          </div>
-              
-                          <div class="algorithms">
-                            <input type="radio" id="text-classifier" name="algorithms" value="text-classifier" class="mr-2">
+                        </div>
+
+                        <div class="algorithms">
+                            <input type="radio" id="text-classifier" name="algorithms" value="text-classifier"
+                                class="mr-2">
                             <label for="text-classifier">text-classifier</label><br>
-                          </div>
+                        </div>
                         <!-- <input class="btn btn-secondary btn-lemmatizer mb-3 w-100" id="lemmatizer" type="button"
                             value="lemmatizer">
                         <input class="btn btn-secondary btn-text-classifier mb-3 mt-2 w-100" id="text-classifier"
@@ -233,13 +234,7 @@
                 <form action="">
                     <div class="form-group mt-3">
                         <span class="subtitle">nəticə</span>
-                        <div id="baku-output">
-                        </div>
-                        <!-- {% if message %}
-          <h1>{{message}}</h1>
-          {% endif %} -->
-                        <!-- <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"
-            placeholder="the result will appear here..."></textarea> -->
+                        <div id="baku-output"></div>
                         <textarea class="form-control" id="exampleFormControlTextarea2" rows="10"
                             placeholder="nəticə burda görsənəcək..." readonly></textarea>
                     </div>
@@ -247,11 +242,11 @@
             </div>
 
             <div class="col-12 d-flex justify-content-end">
-                <button class="btn btn-secondary btn-test" onclick="interact(document.forms[0].input.value)">
-                    nəticəni gör
+                <button class="btn btn-secondary btn-test"
+                  onclick="interact(document.bakuForm.inText.value, document.bakuForm.lemmatizer.checked, document.bakuForm.exampleRadios.value)">
+                  see the result
                 </button>
-
-            </div>
+              </div>
         </div>
     </div>
     </div>

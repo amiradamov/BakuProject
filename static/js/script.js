@@ -55,7 +55,7 @@ $(document).ready(function () {
   //   lemmatizer.style.backgroundColor = '#726EFF';
   //   textClassifier.style.backgroundColor = 'transparent';
   // }
-})
+
 
 
 linkedin("#overlay_narmina", "#img_narmina");
@@ -72,4 +72,5 @@ $(overlay_elem).hover(
 }, function(){
     $(elem).css('opacity','100%');
 })}
+})
 

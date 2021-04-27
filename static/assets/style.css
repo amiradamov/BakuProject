@@ -178,17 +178,16 @@ select {
 }
 
 .algorithms {
-    background-clip: content-box;
-    padding: 0.5rem 0.5rem 0rem 0.5rem;
+    padding: 0.8rem 0.8rem 0rem 0.8rem;
     border: 1px solid var(--purple-color) !important;
     border-radius: 5%;
+    overflow: hidden;
 }
 
 .contributor {
     position: relative;
   }
 
-  
 .overlay {
     position: absolute;
     top: 0;
@@ -235,7 +234,7 @@ select {
 /* Small devices (phones, 480px and down) */
 @media screen and (max-width: 480px) {
     .statistics {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     .title {
@@ -260,15 +259,11 @@ select {
     }
 
     .names {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .text {
-        font-size: 0.8rem;
-    }
-
-    #algorithms {
-        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+        font-size: 0.9rem;
     }
 
     .btn-test {
@@ -309,10 +304,6 @@ select {
 
     .banner-title {
         font-size: 2rem;
-    }
-
-    #algorithms {
-        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     }
  }
 
