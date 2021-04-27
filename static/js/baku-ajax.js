@@ -16,7 +16,7 @@ function interact(inText, lemmatizer, classifier) {
 	url=url+"&lem="+lemmatizer;
 	url=url+"&class="+classifier;
 	url=url+"&sid="+Math.random();
-	alert(url);
+	// alert(url);
 	xmlHttp.onreadystatechange=stateChanged; 
 	xmlHttp.open("POST",url,true);
 	xmlHttp.send(null);

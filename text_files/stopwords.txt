@@ -1,0 +1,389 @@
+və
+amma
+ancaq
+lakin
+halbuki
+isə
+fəqət
+ya
+ya da
+ya da ki
+və ya
+və yaxud
+yaxud da
+gah
+gah da
+gah da ki
+istər
+the
+ve
+olma
+ol
+istərsə də
+həm
+həm də
+həm də ki
+o cümlədən
+o sıradan
+nəinki
+hətta
+habelə
+həmçinin
+da
+də
+yəni
+məsələn
+nə
+nə də
+nə də ki
+ki
+belə ki
+çünki
+ona görə ki
+buna görə də
+ona görə də
+onun üçün ki
+ondan ötrü ki
+hərçənd
+hərçənd ki
+əgər
+hərgah
+madam ki
+indi ki
+yoxsa
+bir halda ki
+ən
+lap
+daha
+axı
+hətta
+artıq
+düz
+bir
+ki
+necə
+nə
+belə
+olduqca
+ca
+cə
+da
+də
+elə
+məhz
+əsl
+ancaq
+tək
+təkcə
+bir
+bircə
+yalnız
+bəs
+məgər
+bəyəm
+yəni
+ki
+mi
+di
+qoy
+gəl
+gəlin
+gəlsənə
+ha
+bax
+gör
+görsənə
+sana
+sənə
+sanız
+səniz
+kaş
+kaş
+ki
+bircə
+təki
+gərək
+barı
+hə
+yox
+bəli
+xeyr
+heç
+əsla
+doğrudan
+doğrudan da
+həqiqətən
+həqiqətən də
+sözsüz
+şübhəsiz
+şəksiz
+düzü
+doğrusu
+təbii
+təbii ki
+düzdür
+doğrudur
+əlbəttə
+əlbəttə ki
+gərək ki
+görünür
+ehtimal ki
+bəlkə
+bəlkə də
+görək
+görəsən
+deyəsən
+güman ki
+olmaya
+olsun ki
+demə
+müxtəsər
+əvvəla
+nəhayət
+axır ki
+xülasə
+ümumiyyətlə
+beləliklə
+qısası
+qərəz
+əlqərəz
+yaxşı
+yaxşı ki
+deyilənə görə
+zənnimcə
+məncə
+səncə
+bizcə
+mənə görə
+bizə görə
+təəssüf ki
+heyif ki
+əfsus ki
+sanki
+elə bil
+elə bil ki
+güya
+güya ki
+bəh-bəh
+of
+ura
+paho
+oxqay
+aycan-aycan
+ay aman
+ah
+ox
+vay-vay
+uf
+ay dad
+ey
+ay
+ya
+hey
+a
+ehey
+tfu
+xa-xa-xa
+xux
+xox
+of
+ah
+ox
+oy
+eh
+ilə
+la
+lə
+ca
+cə
+əvvəl
+qabaq
+sonra
+bəri
+kimi
+qədər
+dək
+can
+cən
+sarı
+tərəf
+qarşı
+doğru
+kimi
+tək
+təki
+başqa
+savayı
+özgə
+qeyri
+əlavə
+görə
+əsəsan
+üçün
+ötrü
+sarı
+üstündə
+uğrunda
+naminə
+dair
+aid
+xas
+məxsus
+haqda
+barədə
+
+o
+bi
+et
+ol
+edil
+olan
+olun
+edil
+veril
+olmaq
+öz
+olun
+ver
+verin
+de
+bütün
+get
+götür
+bil
+şey
+var
+deyil
+kö
+bi
+vardır
+edir
+keç
+keçir
+keçiril
+bil
+bu
+idi
+imiş
+isə
+ilə
+mən
+sən
+biz
+siz
+onlar
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+bir
+iki
+üç
+dörd
+beş
+altı
+yetdi
+səkkiz
+doqquz
+on
+iyirmi
+otuz
+qırx
+əlli
+altmış
+yetmiş
+səksən
+doxsan
+yüz
+min
+milyon
+milyard
+trilyon
+çox
+həmin
+məhz
+əsas
+əsasən
+lazım
+düş
+qal
+get
+çıx
+indi
+sabah
+birigün
+dünən
+məsələn
+digər
+az
+un
+q
+ü
+e
+r
+t
+y
+u
+i
+o
+p
+ö
+ğ
+a
+s
+d
+f
+g
+h
+j
+k
+l
+ı
+ə
+z
+x
+c
+v
+b
+n
+m
+ç
+ş
+!
+@
+#
+$
+%
+^
+&
+*
+(
+)
+-
++
+_
++
+\
+|
+}
+{
+]
+[
+}
+"
+'
+:
+<
+>
+?
+/
+.
+,
+`
+~

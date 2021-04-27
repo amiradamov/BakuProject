@@ -1,1 +1,8 @@
 .venv
+.DS_Store
+.vscode/
+__pycache__/
+main.txt
+nb_test.txt
+rnn_test.txt
+svm_test.txt
