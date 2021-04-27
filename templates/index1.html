@@ -9,11 +9,12 @@
     <h1>It is Just An Example</h1>
 
     <form action="/out" method="POST">
-        <select name="tools" id="tools" size="4">
-            <option value="naive bayes">naive bayes</option>
-            <option value="neural network">neural network</option>
-            <option value="random forest">random forest</option>
-            <option value="support vector machine">support vector machine</option>
+        <!-- <select name="tools" id="tools" size="4"> -->
+            <input type="radio" id="lemmatizer" name="algorithms" value="lemmatizer" class="mr-2">
+            <label for="lemmatizer">lemmatizer</label><br>
+            
+            <input type="radio" id="text-classifier" name="algorithms" value="text-classifier" class="mr-2">
+            <label for="text-classifier">text-classifier</label><br>
         </select><br>
         <textarea name="text" id="text" cols="30" rows="10" placeholder="Write soething..."></textarea><br>
         <input type="submit" value="submit">

@@ -9,7 +9,7 @@ def index():
 
 @app.route('/out', methods=['POST'])
 def response():
-    if (request.form.get("tools")=="naive bayes"):
+    if (request.form.get("algorithms")=="lemmatizer"):
         fname = request.form.get("text")
         ex1 = "Hello, "+ fname
         return render_template('index1.html', message = ex1)

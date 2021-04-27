@@ -16,23 +16,23 @@ def response():
 
     outText = ""
     inText = request.args.get("q")
-    lematizer = request.args.get("lem")
-    classifier = request.args.get("class")
+    algorithms = request.args.get("alg")
+    # classifier = request.args.get("class")
 
-    if (lematizer == 'true'):
-        outText = "LEMATIZER " + inText
+    if (algorithms == 'lemmatizer'):
+        outText = "lemitize "+ inText
 
-    elif (classifier == "naive_bayes"):
-        outText = "naive_bayes " + inText
+    elif (algorithms == "text-classifier"):
+        outText = "text-classifier " + inText
 
-    elif (classifier == "neural_networks"):
-        outText = "neural_networks " + inText
+    # elif (classifier == "neural_networks"):
+    #     outText = "neural_networks " + inText
 
-    elif (classifier == "random_forest"):
-        outText = "random_forest " + inText
+    # elif (classifier == "random_forest"):
+    #     outText = "random_forest " + inText
 
-    elif (classifier == "support_vector_machine"):
-        outText = "support_vector_machine " + inText
+    # elif (classifier == "support_vector_machine"):
+    #     outText = "support_vector_machine " + inText
     return outText
 
 if __name__ == "__main__":

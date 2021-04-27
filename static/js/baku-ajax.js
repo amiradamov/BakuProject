@@ -1,6 +1,6 @@
 var xmlHttp;
 
-function interact(inText, lemmatizer, classifier) {
+function interact(inText, algorithms) {
 
 	if (inText.length==0) { 
   		document.getElementById("txtHint").innerHTML="";
@@ -13,10 +13,10 @@ function interact(inText, lemmatizer, classifier) {
   	} 
 	var url="http://localhost:5000/resp";
 	url=url+"?q="+inText;
-	url=url+"&lem="+lemmatizer;
-	url=url+"&class="+classifier;
+	url=url+"&alg="+algorithms;
+	// url=url+"&class="+classifier;
 	url=url+"&sid="+Math.random();
-	alert(url);
+	// alert(url);
 	xmlHttp.onreadystatechange=stateChanged; 
 	xmlHttp.open("POST",url,true);
 	xmlHttp.send(null);
